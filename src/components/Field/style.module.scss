@@ -1,0 +1,24 @@
+$spotWidth: 400px / 4.3;
+$spotHeight: 203px / 4.3;
+
+$fieldWidth: 2015px / 4.5;
+$fieldHeight: 2574px / 4.5;
+
+.field {
+  position: absolute;
+  top: 275px;
+  left: 792px;
+  z-index: 20;
+  transform: skew(-63.4deg, 26.3deg);
+  display: grid;
+  grid-template-columns: repeat(5, $spotWidth);
+  grid-template-rows: repeat(13, $spotHeight);
+  width: $fieldWidth;
+  height: $fieldHeight;
+}
+
+.tile {
+  width: $spotWidth;
+  height: $spotHeight;
+  pointer-events: none;
+}

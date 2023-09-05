@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/namerepository/static/css/main.53e4eeb8.css",
+    "main.js": "/namerepository/static/js/main.a44f0904.js",
+    "static/media/terrain.png": "/namerepository/static/media/terrain.633742c96b859189df99.png",
+    "static/media/shade.png": "/namerepository/static/media/shade.c56207dd956e64e21763.png",
+    "static/media/2.png": "/namerepository/static/media/2.3759932943bab68ad9ca.png",
+    "static/media/background.png": "/namerepository/static/media/background.619686ba19b9dfd6adf5.png",
+    "static/media/avatar.png": "/namerepository/static/media/avatar.dfe211fc9257059d9178.png",
+    "static/media/line.png": "/namerepository/static/media/line.9a7ea2340da877647b5b.png",
+    "static/media/icon-48-speaker.svg": "/namerepository/static/media/icon-48-speaker.ab2f322c8910f11377767050a67db95d.svg",
+    "static/media/icon-48-three-dots.svg": "/namerepository/static/media/icon-48-three-dots.8eec75c33ca95148c078830b9a85846b.svg",
+    "static/media/icon-48-house.svg": "/namerepository/static/media/icon-48-house.5d4440a82eb108524a6976491ff7c8cc.svg",
+    "index.html": "/namerepository/index.html",
+    "main.53e4eeb8.css.map": "/namerepository/static/css/main.53e4eeb8.css.map",
+    "main.a44f0904.js.map": "/namerepository/static/js/main.a44f0904.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53e4eeb8.css",
+    "static/js/main.a44f0904.js"
+  ]
+}

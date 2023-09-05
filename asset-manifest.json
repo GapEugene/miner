@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/namerepository/static/css/main.53e4eeb8.css",
-    "main.js": "/namerepository/static/js/main.a44f0904.js",
-    "static/media/terrain.png": "/namerepository/static/media/terrain.633742c96b859189df99.png",
-    "static/media/shade.png": "/namerepository/static/media/shade.c56207dd956e64e21763.png",
-    "static/media/2.png": "/namerepository/static/media/2.3759932943bab68ad9ca.png",
-    "static/media/background.png": "/namerepository/static/media/background.619686ba19b9dfd6adf5.png",
-    "static/media/avatar.png": "/namerepository/static/media/avatar.dfe211fc9257059d9178.png",
-    "static/media/line.png": "/namerepository/static/media/line.9a7ea2340da877647b5b.png",
-    "static/media/icon-48-speaker.svg": "/namerepository/static/media/icon-48-speaker.ab2f322c8910f11377767050a67db95d.svg",
-    "static/media/icon-48-three-dots.svg": "/namerepository/static/media/icon-48-three-dots.8eec75c33ca95148c078830b9a85846b.svg",
-    "static/media/icon-48-house.svg": "/namerepository/static/media/icon-48-house.5d4440a82eb108524a6976491ff7c8cc.svg",
-    "index.html": "/namerepository/index.html",
-    "main.53e4eeb8.css.map": "/namerepository/static/css/main.53e4eeb8.css.map",
-    "main.a44f0904.js.map": "/namerepository/static/js/main.a44f0904.js.map"
+    "main.css": "/miner/static/css/main.5e5393fd.css",
+    "main.js": "/miner/static/js/main.f1f31752.js",
+    "static/media/terrain.png": "/miner/static/media/terrain.633742c96b859189df99.png",
+    "static/media/shade.png": "/miner/static/media/shade.c56207dd956e64e21763.png",
+    "static/media/2.png": "/miner/static/media/2.3759932943bab68ad9ca.png",
+    "static/media/background.png": "/miner/static/media/background.619686ba19b9dfd6adf5.png",
+    "static/media/avatar.png": "/miner/static/media/avatar.dfe211fc9257059d9178.png",
+    "static/media/line.png": "/miner/static/media/line.9a7ea2340da877647b5b.png",
+    "static/media/icon-48-speaker.svg": "/miner/static/media/icon-48-speaker.67bed525721ec2d676ff7fbcf290cbe4.svg",
+    "static/media/icon-48-three-dots.svg": "/miner/static/media/icon-48-three-dots.bbd134bec54653991ff50d1116937a32.svg",
+    "static/media/icon-48-house.svg": "/miner/static/media/icon-48-house.d9f55c6dded5fe9020c3358870c970d2.svg",
+    "index.html": "/miner/index.html",
+    "main.5e5393fd.css.map": "/miner/static/css/main.5e5393fd.css.map",
+    "main.f1f31752.js.map": "/miner/static/js/main.f1f31752.js.map"
   },
   "entrypoints": [
-    "static/css/main.53e4eeb8.css",
-    "static/js/main.a44f0904.js"
+    "static/css/main.5e5393fd.css",
+    "static/js/main.f1f31752.js"
   ]
 }

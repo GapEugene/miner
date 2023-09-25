@@ -7,6 +7,18 @@
   height: 203px;
   padding: 28px 74px 49px 20px;
 
+  @media (max-width: 1440px) {
+    top: -34px;
+    right: -112px;
+    transform: scale(0.66);
+  }
+
+  @media (max-width: 960px) {
+    top: -61px;
+    right: -197px;
+    transform: scale(0.4);
+  }
+
   &::before {
     content: '';
     position: absolute;

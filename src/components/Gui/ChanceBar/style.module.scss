@@ -10,6 +10,16 @@
   height: 163px;
   padding: 30px 20px 45px;
 
+  @media (max-width: 1440px) {
+    bottom: -28px;
+    transform: translateX(-50%) scale(0.66);
+  }
+
+  @media (max-width: 960px) {
+    bottom: -49px;
+    transform: translateX(-50%) scale(0.4);
+  }
+
   &::before {
     content: '';
     position: absolute;

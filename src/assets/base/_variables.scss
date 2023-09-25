@@ -1,7 +1,15 @@
 :root {
+  // colors
   --primary-color: #bcfffa;
 
   --secondary-color: #adbbc2;
 
   --shade-scale-1-color-1: #ffffff;
+
+  // breakpoints
+  --xs-breakpoint: 480;
+  --sm-breakpoint: 640;
+  --md-breakpoint: 960;
+  --lg-breakpoint: 1280;
+  --xl-breakpoint: 1440;
 }

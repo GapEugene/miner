@@ -1,13 +1,13 @@
-$spotWidth: 400px / 4.3;
-$spotHeight: 203px / 4.3;
+$spotWidth: 20.85vw / 4.3;
+$spotHeight: 10.58vw / 4.3;
 
-$fieldWidth: 2015px / 4.5;
-$fieldHeight: 2574px / 4.5;
+$fieldWidth: 104.27vw / 4.3;
+$fieldHeight: 137.59vw / 4.3;
 
 .field {
   position: absolute;
-  top: 275px;
-  left: 792px;
+  top: 14.44vw;
+  left: 38.99vw;
   z-index: 20;
   transform: skew(-63.4deg, 26.3deg);
   display: grid;
@@ -21,4 +21,5 @@ $fieldHeight: 2574px / 4.5;
   width: $spotWidth;
   height: $spotHeight;
   pointer-events: none;
+  user-select: none;
 }

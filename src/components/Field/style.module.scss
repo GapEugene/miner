@@ -22,4 +22,12 @@ $fieldHeight: 137.59vw / 4.3;
   height: $spotHeight;
   pointer-events: none;
   user-select: none;
+
+  &Active {
+    opacity: 1;
+  }
+
+  &Disabled {
+    opacity: 0.33;
+  }
 }

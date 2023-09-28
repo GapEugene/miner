@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/miner/static/css/main.63c2c0fd.css",
-    "main.js": "/miner/static/js/main.8a07a9c7.js",
+    "main.css": "/miner/static/css/main.37e76be1.css",
+    "main.js": "/miner/static/js/main.76ae9188.js",
+    "static/js/845.6e277382.chunk.js": "/miner/static/js/845.6e277382.chunk.js",
     "static/media/terrain.png": "/miner/static/media/terrain.633742c96b859189df99.png",
     "static/media/shade.png": "/miner/static/media/shade.240dbbaa3327ae14fb04.png",
-    "static/media/2.png": "/miner/static/media/2.3759932943bab68ad9ca.png",
-    "static/media/coins.svg": "/miner/static/media/coins.4894478e1cf3e6919ec479b1ac7e2b15.svg",
+    "static/media/tile.png": "/miner/static/media/tile.3759932943bab68ad9ca.png",
+    "static/media/lava.png": "/miner/static/media/lava.2cec9c8f7a067db433d2.png",
     "static/media/background.png": "/miner/static/media/background.619686ba19b9dfd6adf5.png",
+    "static/media/coins.svg": "/miner/static/media/coins.4894478e1cf3e6919ec479b1ac7e2b15.svg",
+    "static/media/button.png": "/miner/static/media/button.5858340591f56c118299.png",
     "static/media/avatar.png": "/miner/static/media/avatar.dfe211fc9257059d9178.png",
     "static/media/line.png": "/miner/static/media/line.9a7ea2340da877647b5b.png",
+    "static/media/win.mp3": "/miner/static/media/win.6e84dcbd22d851b59adc.mp3",
+    "static/media/death-idle.mp3": "/miner/static/media/death-idle.fc1d64e6a03fb6f74563.mp3",
+    "static/media/death-2.mp3": "/miner/static/media/death-2.fa5b9e56baa15602663f.mp3",
     "static/media/coin.svg": "/miner/static/media/coin.9299deac169f14942adef8ece6e2aeb4.svg",
+    "static/media/start.mp3": "/miner/static/media/start.1ff518ce4f3ef2dd6538.mp3",
+    "static/media/death-1.mp3": "/miner/static/media/death-1.05e2b6fe2f689ff2d23a.mp3",
     "static/media/icon-48-speaker.svg": "/miner/static/media/icon-48-speaker.67bed525721ec2d676ff7fbcf290cbe4.svg",
     "static/media/icon-48-three-dots.svg": "/miner/static/media/icon-48-three-dots.bbd134bec54653991ff50d1116937a32.svg",
     "static/media/icon-48-house.svg": "/miner/static/media/icon-48-house.d9f55c6dded5fe9020c3358870c970d2.svg",
     "index.html": "/miner/index.html",
-    "main.63c2c0fd.css.map": "/miner/static/css/main.63c2c0fd.css.map",
-    "main.8a07a9c7.js.map": "/miner/static/js/main.8a07a9c7.js.map"
+    "main.37e76be1.css.map": "/miner/static/css/main.37e76be1.css.map",
+    "main.76ae9188.js.map": "/miner/static/js/main.76ae9188.js.map",
+    "845.6e277382.chunk.js.map": "/miner/static/js/845.6e277382.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63c2c0fd.css",
-    "static/js/main.8a07a9c7.js"
+    "static/css/main.37e76be1.css",
+    "static/js/main.76ae9188.js"
   ]
 }

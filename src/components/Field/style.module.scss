@@ -20,14 +20,32 @@ $fieldHeight: 137.59vw / 4.3;
 .tile {
   width: $spotWidth;
   height: $spotHeight;
-  pointer-events: none;
   user-select: none;
 
   &Active {
     opacity: 1;
+    cursor: pointer;
+
+    &:hover {
+      border-top-width: 4px;
+      border-bottom-width: 4px;
+      border-left-width: 8px;
+      border-right-width: 8px;
+      border-style: solid;
+      border-color: green;
+    }
   }
 
   &Disabled {
     opacity: 0.33;
+  }
+
+  &Bomb {
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-style: solid;
+    border-color: red;
   }
 }

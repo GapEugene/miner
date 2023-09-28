@@ -1,27 +1,27 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-  value: 'READY_TO_PLAY',
-};
+import { FLOW } from '../../utilities/constants';
 
-const flows = {
-  READY_TO_PLAY: 'READY_TO_PLAY',
-  TILE_CHOOSE: 'TILE_CHOOSE',
-  SUCCESS: 'SUCCESS',
-  DEFEAT: 'DEFAT',
-  WIN: 'WIN',
+const initialState = {
+  value: FLOW.READY_TO_PLAY,
 };
 
 export const flowSlice = createSlice({
   name: 'flow',
   initialState,
   reducers: {
-    play: (state) => {
-      state.value = flows.TILE_CHOOSE
+    tileChoose: (state) => {
+      state.value = FLOW.TILE_CHOOSE
+    },
+    defeat: (state) => {
+      state.value = FLOW.READY_TO_PLAY
+    },
+    win: (state) => {
+      state.value = FLOW.READY_TO_PLAY
     },
   },
 });
 
-export const { play } = flowSlice.actions;
+export const { tileChoose, defeat, win } = flowSlice.actions;
 
 export default flowSlice.reducer;

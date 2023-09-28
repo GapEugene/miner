@@ -1,1 +1,9 @@
 export const FIELD_SISE = 5 * 13;
+
+export const FLOW = {
+  READY_TO_PLAY: 'READY_TO_PLAY',
+  TILE_CHOOSE: 'TILE_CHOOSE',
+  SUCCESS: 'SUCCESS',
+  DEFEAT: 'DEFEAT',
+  WIN: 'WIN',
+}

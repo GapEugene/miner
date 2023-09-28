@@ -14,7 +14,7 @@ export const flowSlice = createSlice({
       state.value = FLOW.TILE_CHOOSE;
     },
     defeat: (state) => {
-      state.value = FLOW.READY_TO_PLAY;
+      state.value = FLOW.DEFEAT;
     },
     win: (state) => {
       state.value = FLOW.READY_TO_PLAY;

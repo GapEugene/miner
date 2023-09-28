@@ -6,4 +6,9 @@ export const FLOW = {
   SUCCESS: 'SUCCESS',
   DEFEAT: 'DEFEAT',
   WIN: 'WIN',
-}
+};
+
+export const MOLE_STATES = {
+  IDLE: 'IDLE',
+  MOVING: 'MOVING',
+};

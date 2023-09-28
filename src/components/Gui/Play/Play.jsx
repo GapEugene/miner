@@ -4,6 +4,7 @@ import { useSound } from 'use-sound';
 
 import { tileChoose, win } from '../../../store/reducers/flowSlice';
 import { restart } from '../../../store/reducers/rowSlice';
+import { resetCoords } from '../../../store/reducers/moleSlice';
 
 import { FLOW } from '../../../utilities/constants';
 
@@ -17,9 +18,10 @@ const Play = () => {
   const [playSound] = useSound(startSound);
 
   const buttonClick = () => {
-    if (flowState === FLOW.READY_TO_PLAY) {
+    if (flowState === FLOW.READY_TO_PLAY || flowState === FLOW.DEFEAT) {
       playSound();
       dispatch(tileChoose());
+      dispatch(resetCoords());
     }
 
     if (flowState === FLOW.TILE_CHOOSE) {
@@ -31,7 +33,7 @@ const Play = () => {
   return (
     <div className={styles.play}>
       <button className={styles.button} onClick={buttonClick}>
-        {flowState === FLOW.READY_TO_PLAY && 'Play'}
+        {(flowState === FLOW.READY_TO_PLAY || flowState === FLOW.DEFEAT) && 'Play'}
         {flowState === FLOW.TILE_CHOOSE && 'Collect'}
       </button>
     </div>

@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Mole from '../Mole';
 
 import { getVwCoords } from '../../utilities/getVwCoords';
-import { isBomb } from '../../utilities/setBombs';
+import { isBomb } from '../../utilities/isBombs';
 
 import { nextRow, restart } from '../../store/reducers/rowSlice';
 import { defeat } from '../../store/reducers/flowSlice';
@@ -14,6 +14,7 @@ import { setCoords } from '../../store/reducers/moleSlice';
 import { FIELD_SISE, FLOW } from '../../utilities/constants';
 
 import tileImage from './assets/images/tile.png';
+import lavaImage from './assets/images/lava.png';
 
 import style from './style.module.scss';
 
@@ -62,18 +63,25 @@ const Field = () => {
 
   const tilesRef = useRef([]);
 
+  const getTileBackgroundImage = (index) => {
+    if (isBomb(index) && flowState === FLOW.DEFEAT) {
+      return `url(${lavaImage})`;
+    }
+
+    return `url(${tileImage})`;
+  };
+
   return (
     <>
       <Mole />
       <div className={style.field}>
         {[...Array(FIELD_SISE)].map((tile, index) => {
-          return <img
+          return <div
             key={`tile-${index}`}
             className={classnames(style.tile, getTileClassName(index), isBomb(index) && style.tileBomb)}
-            src={tileImage}
-            alt=""
             onClick={() => getRowTiles(index) && tileClick(index)}
             ref={(element) => tilesRef.current[index] = element}
+            style={{ backgroundImage: getTileBackgroundImage(index) }}
           />
         })}
       </div>

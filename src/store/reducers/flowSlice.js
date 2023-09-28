@@ -11,13 +11,13 @@ export const flowSlice = createSlice({
   initialState,
   reducers: {
     tileChoose: (state) => {
-      state.value = FLOW.TILE_CHOOSE
+      state.value = FLOW.TILE_CHOOSE;
     },
     defeat: (state) => {
-      state.value = FLOW.READY_TO_PLAY
+      state.value = FLOW.READY_TO_PLAY;
     },
     win: (state) => {
-      state.value = FLOW.READY_TO_PLAY
+      state.value = FLOW.READY_TO_PLAY;
     },
   },
 });

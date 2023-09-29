@@ -10,9 +10,9 @@ import { isBomb } from '../../utilities/isBombs';
 
 import { nextRow, restart } from '../../store/reducers/rowSlice';
 import { defeat } from '../../store/reducers/flowSlice';
-import { setCoords } from '../../store/reducers/moleSlice';
+import { setCoords, move, death, win } from '../../store/reducers/moleSlice';
 
-import { FIELD_SISE, FLOW } from '../../utilities/constants';
+import { FIELD_SISE, FLOW, MOLE_STATES } from '../../utilities/constants';
 
 import tileImage from './assets/images/tile.png';
 import lavaImage from './assets/images/lava.png';
@@ -33,6 +33,7 @@ const Field = () => {
   const flowState = useSelector((state) => state.flow.value);
   const rowState = useSelector((state) => state.row.value);
   const sceneState = useSelector((state) => state.scene.value);
+  const moleState = useSelector((state) => state.mole.value);
   const dispatch = useDispatch();
 
   const getRowTiles = (index) => {
@@ -53,6 +54,7 @@ const Field = () => {
     const top = Math.round(tilesRef.current[index].getBoundingClientRect().top);
     const left = Math.round(tilesRef.current[index].getBoundingClientRect().left);
 
+    dispatch(move());
     dispatch(setCoords({ top: `${getVwCoords(top + sceneState.top)}vw`, left: `${getVwCoords(left + sceneState.left)}vw` }));
 
     if (isBomb(index)) {
@@ -61,6 +63,7 @@ const Field = () => {
       dispatch(defeat());
       dispatch(restart());
       playSound3();
+      dispatch(death());
     }
 
     if (!isBomb(index)) {
@@ -68,6 +71,7 @@ const Field = () => {
         dispatch(defeat());
         dispatch(restart());
         playSound4();
+        dispatch(win());
       }
 
       if (rowState < 13) {
@@ -94,7 +98,7 @@ const Field = () => {
           return <div
             key={`tile-${index}`}
             className={classnames(style.tile, getTileClassName(index), isBomb(index) && style.tileBomb)}
-            onClick={() => getRowTiles(index) && tileClick(index)}
+            onClick={() => (flowState === FLOW.TILE_CHOOSE && getRowTiles(index)) && tileClick(index)}
             ref={(element) => tilesRef.current[index] = element}
             style={{ backgroundImage: getTileBackgroundImage(index) }}
           />

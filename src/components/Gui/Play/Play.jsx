@@ -5,6 +5,7 @@ import { useSound } from 'use-sound';
 import { tileChoose, win } from '../../../store/reducers/flowSlice';
 import { restart } from '../../../store/reducers/rowSlice';
 import { resetCoords } from '../../../store/reducers/moleSlice';
+import { stand } from '../../../store/reducers/moleSlice';
 
 import { FLOW } from '../../../utilities/constants';
 
@@ -22,6 +23,7 @@ const Play = () => {
       playSound();
       dispatch(tileChoose());
       dispatch(resetCoords());
+      dispatch(stand());
     }
 
     if (flowState === FLOW.TILE_CHOOSE) {

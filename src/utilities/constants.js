@@ -7,3 +7,11 @@ export const FLOW = {
   DEFEAT: 'DEFEAT',
   WIN: 'WIN',
 };
+
+export const MOLE_STATES = {
+  IDLE: 'IDLE',
+  MOVING: 'MOVING',
+  GLITCH_OUT: 'GLITCH_OUT',
+  DEATH: 'DEATH',
+  WIN: 'WIN',
+};
